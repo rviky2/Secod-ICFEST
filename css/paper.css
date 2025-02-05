@@ -1,0 +1,113 @@
+/* Apply white background to the entire body */
+body {
+    background-color: #ffffff; /* Set the whole screen to white */
+    font-family: 'Roboto', sans-serif; /* Ensure the font is consistent */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Set a dark text color for contrast */
+}
+
+/* General section styling */
+.paper-submission {
+    padding: 50px 0;
+    background-color: #ffffff; /* Ensure background is white for this section */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Section title */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333; /* Dark text for good contrast */
+    margin-bottom: 20px;
+}
+
+/* Introduction text */
+.intro-text {
+    text-align: center;
+    font-size: 18px;
+    color: #555; /* Slightly lighter text color */
+    margin-bottom: 40px;
+}
+
+/* Submission details */
+.submission-details {
+    margin-bottom: 30px;
+}
+
+.submission-details h3 {
+    font-size: 24px;
+    color: #222; /* Darker text color */
+    margin-bottom: 15px;
+}
+
+.submission-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.submission-details li {
+    font-size: 16px;
+    color: #555; /* Lighter color for list items */
+    margin-bottom: 10px;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    text-align: center;
+    margin-top: 30px; /* Added margin for better spacing */
+}
+
+.call-to-action p {
+    font-size: 16px;
+    color: #555; /* Lighter color for instructions */
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.download-btn, .submit-link {
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff; /* Blue buttons */
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin: 10px 15px; /* Adds space between buttons */
+}
+
+.download-btn:hover, .submit-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    .submission-details ul {
+        padding-left: 10px;
+    }
+
+    .submission-details li {
+        font-size: 14px;
+    }
+
+    .download-btn, .submit-link {
+        font-size: 16px;
+        padding: 10px 18px;
+        margin: 10px 8px; /* Adjusted margin for smaller screens */
+    }
+}

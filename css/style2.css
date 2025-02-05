@@ -1,0 +1,56 @@
+/* Ensure the navbar is sticky and looks good */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 15px 20px;
+    font-size: 1.1rem;
+  }
+  
+  /* Dropdown menu */
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+  }
+  
+  .dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Responsive navbar */
+  @media (max-width: 991px) {
+    .navbar-nav {
+      text-align: center;
+      margin-top: 15px;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 5px 0;
+    }
+  
+    .navbar-toggler {
+      border: none;
+      background: transparent;
+    }
+  
+    /* Dropdown toggle on small screens */
+    .navbar-collapse {
+      text-align: center;
+    }
+  }
+  

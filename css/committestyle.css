@@ -1,0 +1,263 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+/* Committee Box Styles */
+.committee-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.committee-box h2 {
+    background-color: #009688;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.committee-box h3 {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.committee-box ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.committee-box ul li {
+    margin-bottom: 15px;
+}
+
+/* Label Styling */
+.committee-box li strong {
+    font-size: 18px;
+    font-weight: 700;
+    color: #009688;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Value Styling */
+.committee-box li span {
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    text-align: left;
+    display: block;
+    margin-left: 20px;
+}
+
+/* Chief Patrons Section */
+.chief-patrons,
+.conveners,
+.patrons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.chief-patron,
+.convener,
+.patron {
+    width: 48%;
+    text-align: center;
+}
+
+.chief-patron img,
+.convener img,
+.patron img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #4caf4f00;
+    border-radius: 8px;
+    object-position: center; /* Ensure the image is centered within the square */
+}
+
+.chief-patron p,
+.convener p,
+.patron p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #666;
+}
+
+/* Style to Differentiate Names and Designations */
+.committee-box li .name {
+    font-weight: 800;  /* Make name more bold */
+    font-size: 18px;   /* Slightly bigger font size */
+    color: #1e7e34;    /* Dark green for Names */
+    text-transform: uppercase; /* Make names uppercase */
+}
+
+.committee-box li .designation {
+    font-weight: 500;  /* Lighter weight for designation */
+    font-size: 16px;   /* Slightly smaller font size */
+    color: #333;       /* Regular dark gray for Designation */
+    text-transform: capitalize;  /* Capitalize first letters */
+}
+
+/* Convener Section */
+.conveners {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.convener {
+    width: 48%;
+    text-align: center;
+}
+
+.convener img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #4caf4f00;
+    border-radius: 8px;
+    object-position: center;
+}
+
+.convener p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #666;
+}
+
+/* Section Styling for Better Alignment */
+.committee-subsection {
+    margin-top: 20px;
+}
+
+/* Patron Section (Updated) */
+.patrons {
+    display: flex;
+    flex-direction: column; /* Arrange in a single column */
+    justify-content: center;
+    align-items: center; /* Center align the patron details */
+    margin-top: 20px;
+}
+
+.patron {
+    width: 100%; /* Full width for each patron section */
+    text-align: center;
+    margin-bottom: 20px; /* Space between each patron */
+}
+
+.patron img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #4caf4f00;
+    border-radius: 8px;
+    object-position: center;
+}
+
+.patron p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #666;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding-top: 20px;
+    }
+
+    .committee-box {
+        padding: 20px;
+    }
+
+    .committee-box h2, .committee-box h3 {
+        font-size: 20px;
+    }
+
+    .chief-patrons,
+    .conveners,
+    .patrons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chief-patron,
+    .convener,
+    .patron {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .committee-box ul {
+        padding-left: 0;
+    }
+}
+/* Advisory Committee */
+.advisory-committee ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  .advisory-committee ul li {
+    margin-bottom: 15px;
+  }
+  
+  .advisory-committee h2 {
+    background-color: #008CBA;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  /* Footer Section */
+.footer-section {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+  }
+  
